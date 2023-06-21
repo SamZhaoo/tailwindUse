@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  
+  <div>top</div>
 </template>
 
 <style scoped>

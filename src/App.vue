@@ -1,22 +1,30 @@
 <script setup>
-import index from './components/index.vue'
+import top from './layout/top.vue'
+import left from './layout/left.vue'
+import middle from './layout/middle.vue'
+import right from './layout/right.vue'
+
+// const darkMode = () => {
+//   const clsList = document.documentElement.classList
+//   if (!clsList.contains('dark-mode')) {
+//     document.documentElement.classList.add('dark')
+//   }
+// }
+// const lightMode = () => {
+//   document.documentElement.classList.remove('dark')
+// }
 </script>
 
 <template>
-  <index/>
+  <div class="mx-auto">
+    <top></top>
+    <div class="flex">
+      <left></left>
+      <middle></middle>
+      <right></right>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>

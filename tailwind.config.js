@@ -4,12 +4,15 @@ export default {
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}'
   ],
+  darkMode: 'class',
   theme: {
-    darkMode: 'class',
     extend: {
+      padding: {
+        1: '30px'
+      },
       colors: {
         //自定义配置
-        'blue': {
+        blue: {
           'main': '#0164FF',
           'main-padding': '#3D99FF',
         },
@@ -17,7 +20,7 @@ export default {
           'main': '#00B1B2',
           'main-padding': '#1CD1BD',
         },
-        'orange': {
+        orange: {
           'main': '#E56E0D',
           'main-padding': '#F5BB4B',
         },
